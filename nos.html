@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nossas Viagens</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/nos.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Nós</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#viagens">Viagens</a></li>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="padding-top: 120px;">
+    <section id="viagens" class="about">
+      <h2>Nossas Viagens</h2>
+      <p style="margin-bottom: 2rem;">Cada lugar, um capítulo da nossa história 💙</p>
+
+      <div class="viagens-container">
+        <article class="viagem-card" data-destino="ilhabela">
+          <h3>Ilhabela</h3>
+          <p>19/05/25 - 21/05/25</p>
+          <button class="abrir-galeria" data-galeria="galeria-ilhabela">Ver Fotos</button>
+        </article>
+
+        <!-- Futuras viagens podem ser adicionadas abaixo
+        <article class="viagem-card" data-destino="...">
+          <h3>...</h3>
+          <p>...</p>
+          <button class="abrir-galeria" data-galeria="galeria-...">Ver Fotos</button>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <!-- Galeria Ilhabela -->
+    <section id="galeria-ilhabela" class="gallery" style="display: none;">
+      <h3 style="grid-column: 1 / -1; text-align: center;">Nossa Galeria</h3>
+
+      <div class="gallery-item"><img src="./assets/img/ilhabela1.JPEG" alt="Ilhabela 1" /></div>
+      <div class="gallery-item"><img src="./assets/img/ilhabela2.JPEG" alt="Ilhabela 2" /></div>
+      <div class="gallery-item"><video src="./assets/img/ilhabela3.MP4" controls></video></div>
+      <div class="gallery-item"><video src="./assets/img/ilhabela4.MP4" controls></video></div>
+      <div class="gallery-item"><img src="./assets/img/ilhabela5.JPEG" alt="Ilhabela 5"/></div>
+      <div class="gallery-item"><video src="./assets/img/ilhabela6.MP4" controls></video></div>
+      <div class="gallery-item"><video src="./assets/img/ilhabela7.MP4" controls></video></div>
+      <div class="gallery-item"><video src="./assets/img/ilhabela8.MP4" controls></video></div>
+      <div class="gallery-item"><video src="./assets/img/ilhabela9.MP4" controls></video></div>
+      <div class="gallery-item"><img src="./assets/img/ilhabela10.JPEG" alt="Ilhabela 10"/></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/__m.estevao/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Gabriel & Mariana. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./assets/js/nos.js"></script>
+</body>
+</html>
